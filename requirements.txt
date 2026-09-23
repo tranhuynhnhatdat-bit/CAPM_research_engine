@@ -1,0 +1,23 @@
+# CAPM research engine - runtime dependencies
+# Install with:  .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# --- Core numerical stack -------------------------------------------------
+numpy>=2.4
+pandas>=3.0
+scipy>=1.18
+
+# --- Econometrics ---------------------------------------------------------
+# OLS/rolling regressions, HAC (Newey-West) standard errors for CAPM betas,
+# market-model residual diagnostics.
+statsmodels>=0.14
+
+# --- Market data & HTTP ---------------------------------------------------
+yfinance>=0.2.55
+requests>=2.34
+
+# --- Visualization --------------------------------------------------------
+matplotlib>=3.11
+plotly>=6.9
+
+# --- Configuration / secrets (.env for API keys, ticker universes) --------
+python-dotenv>=1.2

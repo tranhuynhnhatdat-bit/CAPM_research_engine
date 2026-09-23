@@ -1,0 +1,14 @@
+# Tooling configuration for the CAPM research engine.
+# Dependencies are declared in requirements.txt / requirements-dev.txt.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
